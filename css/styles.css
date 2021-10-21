@@ -1,4 +1,16 @@
-#lionfacts, #tigerfacts, #bearfacts {
+#lionfacts {
+  display: none;
+}
+
+#tigerfacts {
+  display: none;
+}
+
+#bearfacts {
+  display: none;
+}
+
+#default {
   display: none;
 }
 

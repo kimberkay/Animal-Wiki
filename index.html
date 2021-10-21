@@ -10,37 +10,42 @@
 <body>
   <div class="container">
     <h1>Pick the Animal You Want to Learn About</h1>
-    <div class="radio">
-      <label>
-        <input type="radio" name="animal" value="animal/facts" checked>
-        Lions
-      </label>
-    </div>
-    <div class="radio">
-      <label>
-        <input type="radio" name="animal" value="animal/facts">
-        Tigers
-      </label>
-    </div>
-    <div class="radio">
-      <label>
-        <input type="radio" name="animal" value="animal/facts">
-        Bears
-      </label>
-    </div>
-    <button type="submit" class="btn btn-light">Submit</button>
-    <div id="lionfacts">
-      <h1>All About Lions</h1>
-      <p>LIONS - Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, ullam adipisci mollitia dicta quaerat magnam corporis molestiae numquam minima ipsam a commodi iure repudiandae delectus laudantium illum voluptatibus sed? Earum.</p>
-    </div>
-    <div id="tigerfacts">
-      <h1>All About Tigers</h1>
-      <p>Tigers - Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, ullam adipisci mollitia dicta quaerat magnam corporis molestiae numquam minima ipsam a commodi iure repudiandae delectus laudantium illum voluptatibus sed? Earum.</p>
-    </div>
-    <div id="bearfacts">
-      <h1>All About Bears</h1>
-      <p>Bears - Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, ullam adipisci mollitia dicta quaerat magnam corporis molestiae numquam minima ipsam a commodi iure repudiandae delectus laudantium illum voluptatibus sed? Earum.</p>
-    </div>
+    <form id="animalForm">
+      <div class="radio">
+        <label>
+          <input type="radio" name="animal" value="Lions" checked>
+          Lions
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="animal" value="Tigers">
+          Tigers
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="animal" value="Bears">
+          Bears
+        </label>
+      </div>
+      <button type="submit" class="btn btn-dark">Submit</button>
+      <div id="lionfacts">
+        <h1>All About Lions</h1>
+        <p>Lions - Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, ullam adipisci mollitia dicta quaerat magnam corporis molestiae numquam minima ipsam a commodi iure repudiandae delectus laudantium illum voluptatibus sed? Earum.</p>
+      </div>
+      <div id="tigerfacts">
+        <h1>All About Tigers</h1>
+        <p>Tigers - Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, ullam adipisci mollitia dicta quaerat magnam corporis molestiae numquam minima ipsam a commodi iure repudiandae delectus laudantium illum voluptatibus sed? Earum.</p>
+      </div>
+      <div id="bearfacts">
+        <h1>All About Bears</h1>
+        <p>Bears - Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, ullam adipisci mollitia dicta quaerat magnam corporis molestiae numquam minima ipsam a commodi iure repudiandae delectus laudantium illum voluptatibus sed? Earum.</p>
+      </div>
+      <div id="default">
+        <h1>make a selection</h1>
+      </div>
+    </form>
   </div>
 </body>
 </html>

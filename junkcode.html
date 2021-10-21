@@ -10,17 +10,20 @@ function bear(animal)  {
 }
 
 $(document).ready(function() {
-  $('form#animalForm').submit(function(event) {
+  $("form#animalForm").submit(function(event) {
     event.preventDefault();
     const animalChoice = $("input:radio[name=animal]:checked").val();
     console.log(animalChoice)     
 
-    if (animalChoice === "Lions") {
+    if (animalChoice === $("input:radio[name=animal]:checked").val()) {
       $('#lionfacts').show();
-    } else if (animalChoice === "Tigers") {
+    } else if (animalChoice === $("input:radio[name=animal]:checked").val()) {
       $('#tigerfacts').show();
-    } else {
+    } else if (animalChoice === $("input:radio[name=animal]:checked").val()) {
       $('#bearfacts').show();
+    } else {
+      $('#default').show();
     }
   });
 });
+
