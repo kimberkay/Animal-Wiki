@@ -12,16 +12,16 @@ function bear(animal)  {
 $(document).ready(function() {
   $('form#animalForm').submit(function(event) {
     event.preventDefault();
+    $('#lionfacts').hide();
+    $('#tigerfacts').hide();
+    $('#bearfacts').hide();
     const animalChoice = $("input:radio[name=animal]:checked").val();
   
     if (animalChoice === "Lions") {
-      // remove
       $('#lionfacts').show();
     } else if (animalChoice === "Tigers") {
-      // remove
       $('#tigerfacts').show();
     } else {
-      $('.animalfacts').remove();
         $('#bearfacts').show();
     }
   });
